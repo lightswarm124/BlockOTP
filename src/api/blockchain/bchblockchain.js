@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 
-const wrap = require('../../../middlewares/wrap');
+const wrap = require('../../middlewares/wrap');
 
 const router = express.Router();
 

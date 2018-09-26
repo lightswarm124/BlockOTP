@@ -1,9 +1,6 @@
 # BlockOTP
 BlockOTP is a Blockchain-Based One-Time Password Setup Using Newly Minted Blocks and Json Web Tokens
 
-## Table of Contents
-
-
 ## Overview
 
 * Blockchain Height Data Encoded in JWT Format
@@ -59,7 +56,3 @@ npm run audit ( OR ) yarn audit
 ```
 npm run test ( OR ) yarn test
 ```
-
-## Something Missing?
-
-If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)

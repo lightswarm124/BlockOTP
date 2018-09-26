@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 
-const wrap = require('../../middlewares/wrap');
+const wrap = require('../middlewares/wrap');
 const blockData = require('./blockchain/bchblockchain');
 const addressData = require('./blockchain/addresses');
 
@@ -15,7 +15,7 @@ router.get('/', wrap(async (req, res) => {
     .catch(err => {
       return err;
     });
-  
+
   res.status(200).json({
     blockchainStatus: blockchainStatus
   });

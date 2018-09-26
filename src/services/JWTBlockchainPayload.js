@@ -15,13 +15,9 @@ module.exports = async function (expirationBlock) {
   }).catch(function (err) {
     return err;
   });
-  let payload = await {
+  return await {
     bkh: blockHeight,
     mkr: merkleRoot,
     ebn: blockHeight + expirationBlock
   };
-  return await jwt.sign(payload, process.env.SECRET, {
-    algorithm: 'HS256',
-    noTimestamp: true
-  });
 };
